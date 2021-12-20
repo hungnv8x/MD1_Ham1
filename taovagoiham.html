@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraCauTraLoi(CauTraLoi) {
+        let result = '';
+        if (CauTraLoi) {
+            result = 'Ban da out game'
+        } else {
+            result = 'Ban van trong game'
+        }
+        return result;
+    }
+    let inputCauTraLoi = confirm('Ban co muon thoat game khong?')
+    document.write(kiemTraCauTraLoi(inputCauTraLoi))
+</script>
+</body>
+</html>
