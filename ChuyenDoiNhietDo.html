@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyen do F sang do C</h1>
+<p>Do F: <input id="doF" type="number" oninput="chuyenDoi(this.value)" onchange="chuyenDoi(this.value)"></p>
+<p id="doC" >Do C: </p>
+<script>
+    function chuyenDoi(DoF) {
+        DoF=parseFloat(DoF);
+        document.getElementById('doC').innerHTML = 'Do C: ' + (DoF - 32) / 1.8;
+    }
+</script>
+</body>
+</html>
